@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --bg1:#A0F1BD ;
+    --bg2: #F9F9F9 ;
+    --bg3: #2E4F21;
+    --bg4: #CBCBCB;
+    --bg5: #F4F7F5;
+    --bg6: #D2F8DC;
+
+    --ac1: #D2F8DC;
+    --ac2: #D7D7D7;
+
+    --paragraph: #2E4F21;
+    --oa1: #CBCBCB;
+    --oa2: #506349;
+    --oa3: #7D9276;
+    --oa4: #D5E4D0;
+
+    --divider1: #2E4F21 ;
+    --divider2: #CBCBCB  ;
+
+    --font1: "Quicksand", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        height: auto; /* Permite que o body cresça com o conteúdo */
+    }
+
+    footer {
+        display: block; 
+        width: 100%;
+        background-color: var(--bg3);
+    }
+
+    /* header */
+
+    header > nav .media-query {
+        display: block;
+    }
+
+    header > a > h1 {
+        font-size: 3em;
+    }
+
+    #nav-b {
+        background-color: var(--paragraph);
+         color: white;
+        padding: 12px;
+        border-radius: 20px;
+        flex-shrink: 0;
+    }
+
+    header nav {
+    display: flex;
+    align-items: center;
+}
+    
+    header > nav .mobile {
+        display: none;
+    }
+
+    /* main */
+
+    .home {
+        height: auto; /* Remova o height: 500px */
+        padding: 100px 0; /* Use padding para dar altura */
+    }
+
+    .home-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 40px 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .home-flex h1 {
+        font-size: 3em;
+    }
+
+    .home > a {
+        position: relative;
+        top: -120px;
+    }
+
+    .services #p1{
+        padding: 0 50px;
+        font-size: 3em;
+    }
+
+    .boxes-content .box {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        padding: 40px;
+    }
+
+    .box img {
+        width: 300px;
+        margin-top: 0;
+    }
+
+    .box div {
+        flex: 1;
+    }
+
+    #box-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .boxes-content .box img {
+        width: 50%;
+    }
+
+    .division{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .grid-style{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    } 
+    .grid-layout{
+        width: 700px;
+        padding: 10px 50px 10px 0px;
+        border-right: 2px solid  var(--paragraph);
+    }    
+    
+    .person{
+        max-width: 200px;
+    }
+
+    .img-mg{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .a1:nth-child(1){
+    grid-row: 2;
+    }
+
+    .a1:nth-child(2){
+        grid-row: 3;
+    }
+
+    .a1s{
+        grid-row: 1;
+    }
+        
+    .g1 {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .info-main > .g1 > h2 {
+        width: 50%;
+        font-size: 3em;
+    }
+    .info-main > .g1 > p {
+        width: 50%;
+        font-size: 1.17em;
+        margin-bottom: 90px;
+    }
+
+    .flex-main-end {
+        display: flex;
+        flex-direction: row-reverse; 
+        justify-content: space-between; 
+        align-items: center;
+        flex-wrap: nowrap; 
+    }
+
+    .img-end {
+        width: 45%; 
+    }
+    .img-end img {
+        max-width: 100%
+    }
+
+    .custom {
+        width: 45%; 
+        }
+
+    .custom p {
+        font-size: 1em;
+    }
+
+    .first-end {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 120px 0;
+    }
+
+    .first-end h2 {
+        font-size: 2.5em; /* Texto maior no desktop */
+    }
+}

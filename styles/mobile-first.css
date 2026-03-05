@@ -33,8 +33,14 @@
 
 }
 
+.media-query {
+    display: none;
+}
+
 body {
     background-color: var(--bg2);
+    min-height: 100vh; 
+    width: 100%;
 }
 
 /* Cabeçalhop */
@@ -80,12 +86,12 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-.home > img {
+.home  img {
     width: 343px;
     margin-top: 40px;
 }
 
-.home > h1 {
+.home  h1 {
     color: var(--paragraph);
     font-weight: 700;
     padding: 10px;
@@ -93,14 +99,14 @@ body {
     margin-left: 10px;
 }
 
-.home > p {
+.home  p {
     color: var(--paragraph);
     font-weight: 500;
     padding: 10px;
     margin-left: 10px;
 }
 
-.home > a {
+.home  a {
     text-decoration: none;
     background-color: var(--paragraph);
     color: white;
@@ -162,7 +168,7 @@ body {
     margin: 20px auto;
     border-radius: 20px;
     background-color: var(--ac1);
-    height: 610px;
+    height: auto;
     width: 90vw;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
 }
@@ -189,10 +195,11 @@ body {
 
 .box nav {
     display: flex;
-    flex-grow: 1 1 nowrap;
+    flex: 1 1 nowrap;
     padding-top: 50px;
     justify-content:left;
     margin-left: 20px;
+    padding-bottom: 30px;
 }
 
 .box nav a {
@@ -211,7 +218,7 @@ body {
     width: 95vw;
     margin: 70px auto;
     border-radius: 10px;
-
+    padding: 60px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
 }
 
@@ -373,26 +380,24 @@ body {
 }
 
 .first-end {
-    padding: 180px 40px;
-    
+    padding: 80px 20px;
+    text-align: center;
 }
 
 .first-end h2 {
-    text-align: center;
-    font-size: 1.8em;
-    color: var(--divider1);
-    font-weight: bold;
-    margin-bottom: 80px;
+    font-size: 1.5em;
+    color: var(--paragraph);
+    margin-bottom: 30px;
 }
 
 .first-end a {
-    padding: 24px 30px;
-    background-color: var(--divider1);
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--bg3);
     color: white;
     text-decoration: none;
-    font-size: 1.3em;
-    border-radius: 40px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.777);
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 footer {

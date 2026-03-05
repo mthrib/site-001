@@ -14,85 +14,96 @@
         </a>
         <nav>
             <a href="#">Services</a>
-            <a href="#" id="nav-b">Book</a>
+            <a href="#" id="nav-b">
+                <span class="mobile">Book</span>
+                <span class="media-query">Book an appointment</span>
+            </a>
         </nav>
     </header>
     <main>
         <section class="home">
-            <img src="src/globo.png" alt="Imagem Mundo">
-            <h1>Financial Claraty You Can Trust</h1>
-            <p>Trusted financial guidance for every stage of life and business since 1987</p>
+            <div class="home-flex">
+                <div class="home-flex-r"><img src="src/globo.png" alt="Imagem Mundo"></div>
+                <div class="home-flex-l">
+                    <h1>Financial Claraty You Can Trust</h1>
+                    <p>Trusted financial guidance for every stage of life and business since 1987</p>
+                </div>
+            </div>
             <a href="#">Connect with our experts</a>
         </section>
         <section class="services">
             <h2>Services</h2>
-            <p id="p1">Let us handle the <br> numbers, <br> so you can handle your success.</p>
+            <p id="p1">Let us handle the numbers, so you can handle your success.</p>
             <p id="p2">Serving individuals and small businesses since 1987</p>
             <a href="#">Schedule a call</a>
         </section>
         <section class="boxes-content">
-            <div class="box">
-                <img src="src/box1.png" alt="">
-                <div>
-                    <h3>Tax Preparation & Filing</h3>
-                    <p>Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</p>
-                    <nav>
-                        <a href="#">1099 taxes</a>
-                        <a href="#">Dependents</a>
-                        <a href="#">Trust Taxes</a>
-                    </nav>
-                </div>
-            </div>
 
-            <div class="box">
-                <img src="src/box2.png" alt="">
-                <h3>IRS Audit Assistance</h3>
-                <div>
-                    <p>Offer expert guidance and representation to resolve tax audits and disputes with confidence.</p>
-                    <nav>
-                        <a href="#">1099 taxes</a>
-                        <a href="#">Dependents</a>
-                        <a href="#">Trust Taxes</a>
-                    </nav>
-                </div>
-            </div>
-            
-            <div class="box">
-                <img src="src/box3.png" alt="">
-                <h3>Bookkeeping & Accounting</h3>
-                <div>
-                    <p>Maintain organized financial records and provide clear reports to support business growth and financial health.</p>
-                    <nav>
-                        <a href="#">1099 taxes</a>
-                        <a href="#">Dependents</a>
-                        <a href="#">Trust Taxes</a>
-                    </nav>
-                                </div>
-                </div>
-        </section>
+    <div class="box">
+        <img src="src/box1.png" alt="">
+        <div class="box-text">
+            <h3>Tax Preparation & Filing</h3>
+            <p>Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</p>
+            <nav>
+                <a href="#">1099 taxes</a>
+                <a href="#">Dependents</a>
+                <a href="#">Trust Taxes</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="box " id="box-reverse">
+        <img src="src/box2.png" alt="">
+        <div class="box-text">
+            <h3>IRS Audit Assistance</h3>
+            <p>Offer expert guidance and representation to resolve tax audits and disputes with confidence.</p>
+            <nav>
+                <a href="#">1099 taxes</a>
+                <a href="#">Dependents</a>
+                <a href="#">Trust Taxes</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="src/box3.png" alt="">
+        <div class="box-text">
+            <h3>Bookkeeping & Accounting</h3>
+            <p>Maintain organized financial records and provide clear reports to support business growth and financial health.</p>
+            <nav>
+                <a href="#">1099 taxes</a>
+                <a href="#">Dependents</a>
+                <a href="#">Trust Taxes</a>
+            </nav>
+        </div>
+    </div>
+
+    </section>
 
         <section class="box-info">
             <h2>Hear From Our Happy Clients</h2>
-            <div class="grid-layout">
-                <div class="grid-style">
-                    <div class="a1">
-                        <h3>Graphic Designer</h3>
-                        <p>Ontario, Canada</p>
-                    </div>
-                    <div class="a1">
-                        <h3>Commercial Photographer</h3>
-                        <p>Ontario, Canada</p>
-                    </div>
-                    <div class="a1s">
-                        <h3>Stylist</h3>
-                        <p>Austin, Texas</p>
+            <div class="division">
+                <div class="grid-layout">
+                    <div class="grid-style">
+                        <div class="a1">
+                            <h3>Graphic Designer</h3>
+                            <p>Ontario, Canada</p>
+                        </div>
+                        <div class="a1">
+                            <h3>Commercial Photographer</h3>                
+                            <p>Ontario, Canada</p>
+                        </div>
+                        <div class="a1s">
+                            <h3>Stylist</h3>
+                            <p>Austin, Texas</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="person">
-                <p class="person-p">"I used to worry about missing deductions, but with Noble Finance, I know I’m maximizing my savings.”</p>
-                <div class="img-mg">
-                    <img src="src/person.png" alt=""> <p>Margaret L., 24 years old</p>
+                <div class="person">
+                    <p class="person-p">"I used to worry about missing deductions, but with Noble Finance, I know I’m maximizing my savings.”</p>
+                    <div class="img-mg">
+                        <img src="src/person.png" alt=""> <p>Margaret L., 24 years old</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -102,8 +113,8 @@
         </div>
 
         <section class="info-main">
-            <div class=" g1">
-                <h2>Smart Finance for everyone</h2>
+            <div class="g1">
+                <h2 class="">Smart Finance for everyone</h2>
                 <p>At Noble Finance, we believe that financial confidence should be accessible to everyone—whether you’re a solo entrepreneur, managing a growing family, or running a small business.</p>
             </div>
             
@@ -129,20 +140,21 @@
             </div>
         </section>
 
-        <section class="main-end">
+        <section class="flex-main-end">
             <div class="img-end">
                 <img src="src/img2.png" alt="">
             </div>
-            <div class="custom">
+             <div class="custom">
                 <h2>A custom built plan for you</h2>
                 <p>At Noble Finances, we believe that tax filing should be seamless, accurate, and stress-free. Our approach is centered on three key pillars: simplicity, accuracy, and security.</p>
                 <a href="#">Learn More</a>
             </div>
-            <div class="first-end">
-                <h2>We believe that tax filing should be seamless, accurate, and stress-free. Get started with Noble Finance today!</h2>
-                <a href="#">Connect with our experts</a>
-            </div>
-            
+
+
+        </section>
+        <section class="first-end">
+            <h2>We believe that tax filing should be seamless, accurate, and stress-free. Get started with Noble Finance today!</h2>
+            <a href="#">Connect with our experts</a>
         </section>
     </main>
 
